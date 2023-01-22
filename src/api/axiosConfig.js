@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: 'http://localhost:8080',
-    headers : {'content-type':'text/json'}
+    baseURL: 'https://api.twitch.tv/helix/',
+    headers : {'content-type':'text/json',
+        'Authorization': 'Bearer /',
+    'Client-Id': '/'}
 })
-
